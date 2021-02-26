@@ -1,0 +1,24 @@
+
+package javatraining;
+
+abstract class addition{
+    abstract int add(int a,int b,int c);
+    abstract int add(int a,int b);
+}
+public class classAbstract extends addition {
+    int sum;
+    int p;
+    int add(int a,int b,int c){
+       sum = a+b+c;
+       return sum;
+    }
+    int add(int a,int b){
+       p = a+b;
+       return p;
+    }
+    public static void main(String args[]){
+        classAbstract c = new classAbstract();
+        System.out.println(c.add(2,3,4));
+         System.out.println(c.add(4, 5));
+    }
+}

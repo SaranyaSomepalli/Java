@@ -1,0 +1,28 @@
+
+package javatraining;
+
+interface MainInterface{
+    void Hello();
+    interface Interface2{
+        void HI();
+    } 
+}
+class Mainclass implements MainInterface{
+    public void Hello(){
+        System.out.println("Hello");
+    }
+}
+class Mainclass2 implements MainInterface.Interface2{
+    public void HI(){
+        System.out.println("Hi");
+    }
+}
+public class NestedInterface{
+    public static void main(String args[]){
+         Mainclass m = new Mainclass();
+         m.Hello();
+        Mainclass2 n= new Mainclass2();
+        n.HI();
+        
+    }
+}

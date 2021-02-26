@@ -1,0 +1,32 @@
+
+package javatraining;
+
+interface Name{
+    void name1();
+    void name2();
+    void name3();
+}
+
+abstract class Age implements Name{
+    public void name1(){
+        System.out.println("15");
+    }
+    public void name2(){
+        System.out.println("20");
+    }
+    
+}
+class FinalClass extends Age{
+    public void name3(){
+        System.out.println("25");
+    }
+}
+public class NewClass1 {
+    public static void main(String args[]){
+        FinalClass f = new FinalClass();
+        f.name1();
+        f.name2();
+        f.name3();
+        
+    }
+}

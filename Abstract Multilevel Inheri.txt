@@ -1,0 +1,23 @@
+
+package javatraining;
+
+abstract class Employee{
+   abstract void name();
+}
+abstract class Employee1 extends Employee{
+   abstract void salary();
+}
+
+public class NewClass extends Employee1{
+    void name(){
+        System.out.println("Saranya");
+    }
+    void salary(){
+        System.out.println("10000");
+    }
+    public static void main(String args[]){
+        NewClass n = new NewClass();
+        n.name();
+        n.salary();
+    }
+}
